@@ -10,7 +10,7 @@ def load_cog( file_name ):
     global vel_axvline, rot_axvline
     
     if file_name == "":
-        return
+        return 0, 0
     file_str = open(file_name).read()
     file_str = file_str.replace(',', '')
     file_str = file_str.split('\n')
@@ -32,8 +32,8 @@ def load_cog( file_name ):
 
     plt.figure(1)
     plt.clf()
-    plt.plot(time, vy, label="vy")
-    plt.plot(time, vz, label="vz")
+    plt.plot(time, vy, label = "vy")
+    plt.plot(time, vz, label = "vz")
     plt.legend()
     plt.xlabel("time")
     plt.ylabel("velocity")

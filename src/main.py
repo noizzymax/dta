@@ -3,9 +3,8 @@ from tkinter import filedialog
 from tkinter import ttk
 
 from velocity import *
+from amorts import *
 
-
-# some strange comments
 
 label_cog = []
 label_time, label_vy, label_vz, label_rx = [], [], [], []
@@ -13,10 +12,10 @@ label_entry_time, entry_time, scale_time, button_time = [], [], [], []
 
 res_time = []
 
+label_am1, label_am2, label_am3, label_am4 = [], [], [], []
 
 def choose_file_cog():
     global label_cog, scale_time
-    global res_time
     
     file_name = filedialog.askopenfilename(initialdir = "/", title = "Select a File", 
                                            filetypes = (("XOB files", "*.xob*"), ("all files", "*.*")))
@@ -28,11 +27,48 @@ def choose_file_cog():
     scale_time.place(x = 210, y = 130)
     
 
-def choose_file_amort(label_amort):
-    file_name = filedialog.askopenfilename(initialdir = "/", title = "Select a File",
-                                           filetypes = (("XOB files", "*.xob*"), ("all files", "*.*")))
+def choose_file_amort1():
+    global label_am1
+    
+    file_name_st = filedialog.askopenfilename(initialdir = "/", title = "Select a File",
+                                              filetypes = (("XOB files", "*.xob*"), ("all files", "*.*")))
+    file_name_am = filedialog.askopenfilename(initialdir = "/", title = "Select a File",
+                                              filetypes = (("XOB files", "*.xob*"), ("all files", "*.*")))
+    label_am1.config(text = "Static point: " + file_name_st + "\nAmort point: " + file_name_am)
+    load_amort(file_name_st, file_name_am, 1)
 
-    return
+
+def choose_file_amort2():
+    global label_am2
+
+    file_name_st = filedialog.askopenfilename(initialdir = "/", title = "Select a File",
+                                              filetypes = (("XOB files", "*.xob*"), ("all files", "*.*")))
+    file_name_am = filedialog.askopenfilename(initialdir = "/", title = "Select a File",
+                                              filetypes = (("XOB files", "*.xob*"), ("all files", "*.*")))
+    label_am2.config(text = "Static point: " + file_name_st + "\nAmort point: " + file_name_am)
+    load_amort(file_name_st, file_name_am, 2)
+
+
+def choose_file_amort3():
+    global label_am1
+
+    file_name_st = filedialog.askopenfilename(initialdir = "/", title = "Select a File",
+                                              filetypes = (("XOB files", "*.xob*"), ("all files", "*.*")))
+    file_name_am = filedialog.askopenfilename(initialdir = "/", title = "Select a File",
+                                              filetypes = (("XOB files", "*.xob*"), ("all files", "*.*")))
+    label_am3.config(text = "Static point: " + file_name_st + "\nAmort point: " + file_name_am)
+    load_amort(file_name_st, file_name_am, 3)
+
+
+def choose_file_amort4():
+    global label_am1
+
+    file_name_st = filedialog.askopenfilename(initialdir = "/", title = "Select a File",
+                                              filetypes = (("XOB files", "*.xob*"), ("all files", "*.*")))
+    file_name_am = filedialog.askopenfilename(initialdir = "/", title = "Select a File",
+                                              filetypes = (("XOB files", "*.xob*"), ("all files", "*.*")))
+    label_am4.config(text = "Static point: " + file_name_st + "\nAmort point: " + file_name_am)
+    load_amort(file_name_st, file_name_am, 4)
 
 
 def save_time():
@@ -89,16 +125,40 @@ def set_vel_gui():
 
 
 def set_amorts_gui():
-    global label_amorts
+    global label_am1, label_am2, label_am3, label_am4
     
-    button_am1 = ttk.Button(text = "Open file (amort 1)", command = choose_file_amort)
+    button_am1 = ttk.Button(text = "Open file (amort 1)", command = choose_file_amort1 )
     button_am1.pack()
     button_am1.place(x = 30, y = 230)
+    label_am1 = ttk.Label(text = "Static point: \nAmort point: ")
+    label_am1.pack()
+    label_am1.place(x = 150, y = 235)
+
+    button_am2 = ttk.Button(text = "Open file (amort 2)", command = choose_file_amort2)
+    button_am2.pack()
+    button_am2.place(x = 30, y = 270)
+    label_am2 = ttk.Label(text = "Static point: \nAmort point: ")
+    label_am2.pack()
+    label_am2.place(x = 150, y = 275)
+
+    button_am3 = ttk.Button(text = "Open file (amort 3)", command = choose_file_amort3)
+    button_am3.pack()
+    button_am3.place(x = 30, y = 310)
+    label_am3 = ttk.Label(text = "Static point: \nAmort point: ")
+    label_am3.pack()
+    label_am3.place(x = 150, y = 315)
+    
+    button_am4 = ttk.Button(text = "Open file (amort 4)", command = choose_file_amort4)
+    button_am4.pack()
+    button_am4.place(x = 30, y = 350)
+    label_am4 = ttk.Label(text = "Static point: \nAmort point: ")
+    label_am4.pack()
+    label_am4.place(x = 150, y = 355)
     
 
 def main():
     win = Tk()
-    win.geometry("500x800+1000+0")
+    win.geometry("650x1000+900+0")
     
     set_vel_gui()
     set_amorts_gui()

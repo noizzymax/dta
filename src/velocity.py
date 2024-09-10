@@ -1,20 +1,20 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 time, vy, vz, rx = [], [0], [0], []
 vel_axvline, rot_axvline = [], []
 
-def load_cog( file_name ):
+
+def load_cog(file_name):
     global time, vy, vz, rx
     global vel_axvline, rot_axvline
-    
+
     if file_name == "":
         return 0, 0
     file_str = open(file_name).read()
     file_str = file_str.replace(',', '')
     file_str = file_str.split('\n')
-    
+
     time, vy, vz, rx = [], [0], [0], []
     prev_cy, prev_cz = 0, 0
 
@@ -32,51 +32,55 @@ def load_cog( file_name ):
 
     plt.figure(1)
     plt.clf()
-    plt.plot(time, vy, label = "vy")
-    plt.plot(time, vz, label = "vz")
+    plt.plot(time, vy, label="Скорость Vy", linewidth=0.5)
+    plt.plot(time, vz, label="Скорость Vz", linewidth=0.5)
     plt.legend()
-    plt.xlabel("time")
-    plt.ylabel("velocity")
+    plt.xlabel("Время, с")
+    plt.ylabel("Ускорение, м/с")
     plt.xlim(time[0], time[len(time) - 1])
-    vel_axvline = plt.axvline(x = time[0], color = 'grey', label = 'start time line', linestyle = '--')
+    vel_axvline = plt.axvline(x=time[0], color='grey', label='Момент касания', linestyle='--')
     plt.xticks(np.arange(time[0], time[len(time) - 1], 0.1))
 
     plt.figure(2)
     plt.clf()
-    plt.plot(time, rx, label="rotx")
+    plt.plot(time, rx, label="RX", linewidth=0.5)
     plt.legend()
-    plt.xlabel("time")
-    plt.ylabel("rotation")
+    plt.xlabel("Время, с")
+    plt.ylabel("Тангаж, \N{DEGREE SIGN}")
     plt.xlim(time[0], time[len(time) - 1])
-    rot_axvline = plt.axvline(x = time[0], color = 'grey', label = 'start time line', linestyle = '--')
+    rot_axvline = plt.axvline(x=time[0], color='grey', label='Момент касания', linestyle='--')
     plt.xticks(np.arange(time[0], time[len(time) - 1], 0.1))
 
     plt.show()
-    
+
     return time[0], time[len(time) - 1]
 
 
-def update_res_data( input_time ):
+def update_res_data(input_time):
     global vel_axvline, rot_axvline
-    
+
     # time, vy, vz, rx
     rdi = 0
-    delta = 10**10
-    input_time = input_time.get()
-    
+    delta = 10 ** 10
+    # input_time = input_time.get()
+
     for i in range(len(time)):
         if abs(time[i] - input_time) < delta:
             delta = abs(time[i] - input_time)
             rdi = i
-    
+
     vel_axvline.remove()
     plt.figure(1)
-    vel_axvline = plt.axvline(x = time[rdi], color = 'grey', label = 'start time line', linestyle = '--')
-    plt.xlim(max(time[0], time[rdi] - 0.3), min(time[len(time) - 1], time[rdi] + 0.3))
-
+    vel_axvline = plt.axvline(x=time[rdi], color='grey', label='start time line', linestyle='--', linewidth=0.5)
+    # plt.xlim(max(time[0], time[rdi] - 0.3), min(time[len(time) - 1], time[rdi] + 0.3))
+    a = plt.xlim()
+    print(a)
+    plt.draw()
     rot_axvline.remove()
     plt.figure(2)
-    rot_axvline = plt.axvline(x = time[rdi], color = 'grey', label = 'start time line', linestyle = '--')
-    plt.xlim(max(time[0], time[rdi] - 0.3), min(time[len(time) - 1], time[rdi] + 0.3))
+    rot_axvline = plt.axvline(x=time[rdi], color='grey', label='start time line', linestyle='--', linewidth=0.5)
+    plt.xlim(a)
+
+    plt.draw()
 
     return [time[rdi], vy[rdi], vz[rdi], rx[rdi]]

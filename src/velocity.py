@@ -36,7 +36,7 @@ def load_cog(file_name):
     plt.plot(time, vz, label="Скорость Vz", linewidth=0.5)
     plt.legend()
     plt.xlabel("Время, с")
-    plt.ylabel("Ускорение, м/с")
+    plt.ylabel("Скорость, м/с")
     plt.xlim(time[0], time[len(time) - 1])
     vel_axvline = plt.axvline(x=time[0], color='grey', label='Момент касания', linestyle='--')
     plt.xticks(np.arange(time[0], time[len(time) - 1], 0.1))

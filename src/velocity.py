@@ -74,7 +74,6 @@ def update_res_data(input_time):
     vel_axvline = plt.axvline(x=time[rdi], color='grey', label='start time line', linestyle='--', linewidth=0.5)
     # plt.xlim(max(time[0], time[rdi] - 0.3), min(time[len(time) - 1], time[rdi] + 0.3))
     a = plt.xlim()
-    print(a)
     plt.draw()
     rot_axvline.remove()
     plt.figure(2)

@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowDZtEuR.ui'
+## Form generated from reading UI file 'main_windowKIecrG.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.2.4
+## Created by: Qt User Interface Compiler version 6.7.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -18,8 +18,8 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QAbstractItemView, QAbstractScrollArea, QApplication, QFrame,
     QGridLayout, QHBoxLayout, QHeaderView, QLabel,
     QLineEdit, QMainWindow, QPushButton, QSizePolicy,
-    QSpacerItem, QTableWidget, QTableWidgetItem, QVBoxLayout,
-    QWidget)
+    QSpacerItem, QTableWidget, QTableWidgetItem, QToolButton,
+    QVBoxLayout, QWidget)
 import src.res
 
 class Ui_MainWindow(object):
@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(388, 580)
-        sizePolicy = QSizePolicy(QSizePolicy.Fixed, QSizePolicy.Fixed)
+        sizePolicy = QSizePolicy(QSizePolicy.Policy.Fixed, QSizePolicy.Policy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(MainWindow.sizePolicy().hasHeightForWidth())
@@ -64,15 +64,15 @@ class Ui_MainWindow(object):
 "	background-color: rgba(0, 0, 0, 50);\n"
 "	border-radius: 10px;\n"
 "}")
-        self.frame_main.setFrameShape(QFrame.StyledPanel)
-        self.frame_main.setFrameShadow(QFrame.Raised)
+        self.frame_main.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_main.setFrameShadow(QFrame.Shadow.Raised)
         self.gridLayout = QGridLayout(self.frame_main)
         self.gridLayout.setObjectName(u"gridLayout")
         self.frame_3 = QFrame(self.frame_main)
         self.frame_3.setObjectName(u"frame_3")
         self.frame_3.setMaximumSize(QSize(16777215, 50))
-        self.frame_3.setFrameShape(QFrame.StyledPanel)
-        self.frame_3.setFrameShadow(QFrame.Raised)
+        self.frame_3.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_3.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_2 = QVBoxLayout(self.frame_3)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.label_2 = QLabel(self.frame_3)
@@ -95,8 +95,8 @@ class Ui_MainWindow(object):
         self.gridLayout_2.setObjectName(u"gridLayout_2")
         self.frame = QFrame(self.frame_6dof)
         self.frame.setObjectName(u"frame")
-        self.frame.setFrameShape(QFrame.StyledPanel)
-        self.frame.setFrameShadow(QFrame.Raised)
+        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_2 = QHBoxLayout(self.frame)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
         self.label = QLabel(self.frame)
@@ -107,12 +107,15 @@ class Ui_MainWindow(object):
         self.lineEdit_set_time = QLineEdit(self.frame)
         self.lineEdit_set_time.setObjectName(u"lineEdit_set_time")
         self.lineEdit_set_time.setMaximumSize(QSize(140, 30))
-        self.lineEdit_set_time.setCursor(QCursor(Qt.ArrowCursor))
-        self.lineEdit_set_time.setStyleSheet(u"	color: white;\n"
+        self.lineEdit_set_time.setCursor(QCursor(Qt.CursorShape.ArrowCursor))
+        self.lineEdit_set_time.setStyleSheet(u"QLineEdit\n"
+" {\n"
+"	color: white;\n"
 "	font-size: 11pt;\n"
 "	background-color: rgba(255, 255, 255, 80);\n"
 "	border: none;\n"
-"	border-radius: 5px;")
+"	border-radius: 5px; \n"
+"}")
 
         self.horizontalLayout_2.addWidget(self.lineEdit_set_time)
 
@@ -147,9 +150,9 @@ class Ui_MainWindow(object):
 
         self.frame_2 = QFrame(self.frame_6dof)
         self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setLayoutDirection(Qt.LeftToRight)
-        self.frame_2.setFrameShape(QFrame.StyledPanel)
-        self.frame_2.setFrameShadow(QFrame.Raised)
+        self.frame_2.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
+        self.frame_2.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_2.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_3 = QHBoxLayout(self.frame_2)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.horizontalLayout_3.setContentsMargins(-1, 9, -1, 0)
@@ -188,15 +191,46 @@ class Ui_MainWindow(object):
         self.frame_4 = QFrame(self.frame_stats)
         self.frame_4.setObjectName(u"frame_4")
         self.frame_4.setMaximumSize(QSize(16777215, 40))
-        self.frame_4.setFrameShape(QFrame.StyledPanel)
-        self.frame_4.setFrameShadow(QFrame.Raised)
-        self.verticalLayout_3 = QVBoxLayout(self.frame_4)
-        self.verticalLayout_3.setObjectName(u"verticalLayout_3")
-        self.verticalLayout_3.setContentsMargins(-1, 0, -1, 0)
+        self.frame_4.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_4.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_5 = QHBoxLayout(self.frame_4)
+        self.horizontalLayout_5.setObjectName(u"horizontalLayout_5")
+        self.horizontalLayout_5.setContentsMargins(-1, 0, 6, 0)
         self.label_3 = QLabel(self.frame_4)
         self.label_3.setObjectName(u"label_3")
+        self.label_3.setMinimumSize(QSize(250, 0))
+        self.label_3.setMaximumSize(QSize(250, 16777215))
 
-        self.verticalLayout_3.addWidget(self.label_3)
+        self.horizontalLayout_5.addWidget(self.label_3)
+
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_5.addItem(self.horizontalSpacer)
+
+        self.toolButton = QToolButton(self.frame_4)
+        self.toolButton.setObjectName(u"toolButton")
+        self.toolButton.setMinimumSize(QSize(30, 30))
+        self.toolButton.setMaximumSize(QSize(30, 30))
+        self.toolButton.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
+        self.toolButton.setStyleSheet(u"QToolButton {\n"
+"	text-align: center;\n"
+"    border-radius: 5px;\n"
+"	background-color: rgba(0, 0, 0, 50);\n"
+"	color: white;\n"
+"	font-size: 11pt;\n"
+"}\n"
+"QToolButton::hover {\n"
+"	background-color: rgba(0, 0, 0, 80);\n"
+"}\n"
+"QToolButton::pressed {\n"
+"	background-color: rgba(0, 0, 0, 100);\n"
+"}")
+        icon = QIcon()
+        icon.addFile(u":/images/images/settings.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.toolButton.setIcon(icon)
+        self.toolButton.setIconSize(QSize(20, 20))
+
+        self.horizontalLayout_5.addWidget(self.toolButton)
 
 
         self.verticalLayout.addWidget(self.frame_4)
@@ -205,8 +239,8 @@ class Ui_MainWindow(object):
         self.frame_5.setObjectName(u"frame_5")
         self.frame_5.setMaximumSize(QSize(16777215, 300))
         self.frame_5.setStyleSheet(u"background-color: rgba(255, 255, 255, 0);")
-        self.frame_5.setFrameShape(QFrame.StyledPanel)
-        self.frame_5.setFrameShadow(QFrame.Raised)
+        self.frame_5.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_5.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_4 = QHBoxLayout(self.frame_5)
         self.horizontalLayout_4.setObjectName(u"horizontalLayout_4")
         self.tableWidget = QTableWidget(self.frame_5)
@@ -256,13 +290,13 @@ class Ui_MainWindow(object):
 "    border-right: 1px solid rgba(255, 255, 255, 80);\n"
 "	\n"
 "}")
-        self.tableWidget.setFrameShape(QFrame.NoFrame)
-        self.tableWidget.setFrameShadow(QFrame.Plain)
+        self.tableWidget.setFrameShape(QFrame.Shape.NoFrame)
+        self.tableWidget.setFrameShadow(QFrame.Shadow.Plain)
         self.tableWidget.setLineWidth(0)
-        self.tableWidget.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
-        self.tableWidget.setSelectionMode(QAbstractItemView.NoSelection)
+        self.tableWidget.setSizeAdjustPolicy(QAbstractScrollArea.SizeAdjustPolicy.AdjustToContents)
+        self.tableWidget.setSelectionMode(QAbstractItemView.SelectionMode.NoSelection)
         self.tableWidget.setShowGrid(True)
-        self.tableWidget.setGridStyle(Qt.SolidLine)
+        self.tableWidget.setGridStyle(Qt.PenStyle.SolidLine)
         self.tableWidget.setSortingEnabled(False)
         self.tableWidget.setCornerButtonEnabled(False)
         self.tableWidget.horizontalHeader().setVisible(True)
@@ -292,8 +326,8 @@ class Ui_MainWindow(object):
         self.frame_6 = QFrame(self.frame_springs)
         self.frame_6.setObjectName(u"frame_6")
         self.frame_6.setMaximumSize(QSize(16777215, 40))
-        self.frame_6.setFrameShape(QFrame.StyledPanel)
-        self.frame_6.setFrameShadow(QFrame.Raised)
+        self.frame_6.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_6.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_4 = QVBoxLayout(self.frame_6)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.verticalLayout_4.setContentsMargins(9, 0, -1, 0)
@@ -307,8 +341,8 @@ class Ui_MainWindow(object):
 
         self.frame_7 = QFrame(self.frame_springs)
         self.frame_7.setObjectName(u"frame_7")
-        self.frame_7.setFrameShape(QFrame.StyledPanel)
-        self.frame_7.setFrameShadow(QFrame.Raised)
+        self.frame_7.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_7.setFrameShadow(QFrame.Shadow.Raised)
         self.gridLayout_3 = QGridLayout(self.frame_7)
         self.gridLayout_3.setObjectName(u"gridLayout_3")
         self.btn_in_1 = QPushButton(self.frame_7)
@@ -419,7 +453,7 @@ class Ui_MainWindow(object):
 
         self.gridLayout_3.addWidget(self.btn_in_4, 2, 1, 1, 1)
 
-        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding)
+        self.verticalSpacer = QSpacerItem(20, 40, QSizePolicy.Policy.Minimum, QSizePolicy.Policy.Expanding)
 
         self.gridLayout_3.addItem(self.verticalSpacer, 3, 0, 1, 2)
 
@@ -442,25 +476,26 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"DTA v.0.2", None))
         self.label_2.setText(QCoreApplication.translate("MainWindow", u"DTA (DROP TEST ANALYSIS) version 0.2", None))
-        self.label.setText(QCoreApplication.translate("MainWindow", u"\u041a\u0430\u0441\u0430\u043d\u0438\u0435, \u0441:", None))
-        self.btn_set_time.setText(QCoreApplication.translate("MainWindow", u"\u0423\u043a\u0430\u0437\u0430\u0442\u044c \u0432\u0440\u0435\u043c\u044f", None))
-        self.btn_load6.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c 6DOF", None))
-        self.label_3.setText(QCoreApplication.translate("MainWindow", u"\u0421\u0442\u0430\u0442\u0438\u0441\u0442\u0438\u043a\u0430 \u0431\u0440\u043e\u0441\u043a\u0430", None))
+        self.label.setText(QCoreApplication.translate("MainWindow", u"Landing, s:", None))
+        self.btn_set_time.setText(QCoreApplication.translate("MainWindow", u"Time click", None))
+        self.btn_load6.setText(QCoreApplication.translate("MainWindow", u"Load 6DOF XOB", None))
+        self.label_3.setText(QCoreApplication.translate("MainWindow", u"Statistics", None))
+        self.toolButton.setText("")
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"\u0424\u0430\u043a\u0442", None));
+        ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Actual", None));
         ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"\u041d\u043e\u043c\u0438\u043d\u0430\u043b", None));
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("MainWindow", u"Nominal", None));
         ___qtablewidgetitem2 = self.tableWidget.verticalHeaderItem(0)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Vz, \u043c/\u0441", None));
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("MainWindow", u"Vz, m/s", None));
         ___qtablewidgetitem3 = self.tableWidget.verticalHeaderItem(1)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Vy, \u043c/\u0441", None));
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("MainWindow", u"Vy, m/s", None));
         ___qtablewidgetitem4 = self.tableWidget.verticalHeaderItem(2)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Rx, \u0433\u0440", None));
-        self.label_4.setText(QCoreApplication.translate("MainWindow", u"\u041e\u0431\u0440\u0430\u0431\u043e\u0442\u043a\u0430 \u0430\u043c\u043e\u0440\u0442\u0438\u0437\u0430\u0442\u043e\u0440\u043e\u0432", None))
-        self.btn_in_1.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u043e\u043f\u043e\u0440\u0443 1", None))
-        self.btn_in_3.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u043e\u043f\u043e\u0440\u0443 3", None))
-        self.btn_in_2.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u043e\u043f\u043e\u0440\u0443 2", None))
-        self.btn_spring_prc.setText(QCoreApplication.translate("MainWindow", u"\u0420\u0430\u0441\u0447\u0435\u0442 ", None))
-        self.btn_in_4.setText(QCoreApplication.translate("MainWindow", u"\u0417\u0430\u0433\u0440\u0443\u0437\u0438\u0442\u044c \u043e\u043f\u043e\u0440\u0443 4", None))
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("MainWindow", u"Rx, deg", None));
+        self.label_4.setText(QCoreApplication.translate("MainWindow", u"Springs processing", None))
+        self.btn_in_1.setText(QCoreApplication.translate("MainWindow", u"Load spring 1", None))
+        self.btn_in_3.setText(QCoreApplication.translate("MainWindow", u"Load spring 3", None))
+        self.btn_in_2.setText(QCoreApplication.translate("MainWindow", u"Load spring 2", None))
+        self.btn_spring_prc.setText(QCoreApplication.translate("MainWindow", u"Process", None))
+        self.btn_in_4.setText(QCoreApplication.translate("MainWindow", u"Load spring 4", None))
     # retranslateUi
 

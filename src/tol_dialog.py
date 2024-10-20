@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'tol_dialogLbSJmX.ui'
+## Form generated from reading UI file 'tol_dialoggSnffj.ui'
 ##
-## Created by: Qt User Interface Compiler version 6.2.4
+## Created by: Qt User Interface Compiler version 6.7.2
 ##
 ## WARNING! All changes made in this file will be lost when recompiling UI file!
 ################################################################################
@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (QAbstractItemView, QAbstractScrollArea, QApplicat
     QFrame, QHBoxLayout, QHeaderView, QLabel,
     QPushButton, QSizePolicy, QSpacerItem, QTableWidget,
     QTableWidgetItem, QVBoxLayout, QWidget)
-
+import src.res
 
 class Ui_Dialog(object):
     def setupUi(self, Dialog):
@@ -53,8 +53,8 @@ class Ui_Dialog(object):
         self.frame_6 = QFrame(self.frame_btns)
         self.frame_6.setObjectName(u"frame_6")
         self.frame_6.setMaximumSize(QSize(16777215, 40))
-        self.frame_6.setFrameShape(QFrame.StyledPanel)
-        self.frame_6.setFrameShadow(QFrame.Raised)
+        self.frame_6.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_6.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_4 = QVBoxLayout(self.frame_6)
         self.verticalLayout_4.setObjectName(u"verticalLayout_4")
         self.verticalLayout_4.setContentsMargins(-1, 0, 6, 0)
@@ -72,8 +72,8 @@ class Ui_Dialog(object):
         self.frame_7.setObjectName(u"frame_7")
         self.frame_7.setMaximumSize(QSize(16777215, 205))
         self.frame_7.setStyleSheet(u"background-color: rgba(255, 255, 255, 0);")
-        self.frame_7.setFrameShape(QFrame.StyledPanel)
-        self.frame_7.setFrameShadow(QFrame.Raised)
+        self.frame_7.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame_7.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout_7 = QHBoxLayout(self.frame_7)
         self.horizontalLayout_7.setObjectName(u"horizontalLayout_7")
         self.tableWidget_2 = QTableWidget(self.frame_7)
@@ -123,13 +123,13 @@ class Ui_Dialog(object):
 "    border-right: 1px solid rgba(255, 255, 255, 80);\n"
 "	\n"
 "}")
-        self.tableWidget_2.setFrameShape(QFrame.NoFrame)
-        self.tableWidget_2.setFrameShadow(QFrame.Plain)
+        self.tableWidget_2.setFrameShape(QFrame.Shape.NoFrame)
+        self.tableWidget_2.setFrameShadow(QFrame.Shadow.Plain)
         self.tableWidget_2.setLineWidth(0)
-        self.tableWidget_2.setSizeAdjustPolicy(QAbstractScrollArea.AdjustToContents)
-        self.tableWidget_2.setSelectionMode(QAbstractItemView.NoSelection)
+        self.tableWidget_2.setSizeAdjustPolicy(QAbstractScrollArea.SizeAdjustPolicy.AdjustToContents)
+        self.tableWidget_2.setSelectionMode(QAbstractItemView.SelectionMode.NoSelection)
         self.tableWidget_2.setShowGrid(True)
-        self.tableWidget_2.setGridStyle(Qt.SolidLine)
+        self.tableWidget_2.setGridStyle(Qt.PenStyle.SolidLine)
         self.tableWidget_2.setSortingEnabled(False)
         self.tableWidget_2.setCornerButtonEnabled(False)
         self.tableWidget_2.horizontalHeader().setVisible(True)
@@ -150,8 +150,8 @@ class Ui_Dialog(object):
 
         self.frame = QFrame(self.frame_btns)
         self.frame.setObjectName(u"frame")
-        self.frame.setFrameShape(QFrame.StyledPanel)
-        self.frame.setFrameShadow(QFrame.Raised)
+        self.frame.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frame.setFrameShadow(QFrame.Shadow.Raised)
         self.horizontalLayout = QHBoxLayout(self.frame)
         self.horizontalLayout.setObjectName(u"horizontalLayout")
         self.horizontalLayout.setContentsMargins(9, -1, 9, -1)
@@ -176,7 +176,7 @@ class Ui_Dialog(object):
 
         self.horizontalLayout.addWidget(self.btn_in_1)
 
-        self.horizontalSpacer_2 = QSpacerItem(30, 20, QSizePolicy.Expanding, QSizePolicy.Minimum)
+        self.horizontalSpacer_2 = QSpacerItem(30, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
 
         self.horizontalLayout.addItem(self.horizontalSpacer_2)
 
@@ -217,16 +217,16 @@ class Ui_Dialog(object):
         Dialog.setWindowTitle(QCoreApplication.translate("Dialog", u"Dialog", None))
         self.label_4.setText(QCoreApplication.translate("Dialog", u"\u0414\u043e\u043f\u0443\u0441\u043a\u0438", None))
         ___qtablewidgetitem = self.tableWidget_2.horizontalHeaderItem(0)
-        ___qtablewidgetitem.setText(QCoreApplication.translate("Dialog", u"\u0412\u0435\u0440\u0445\u043d\u0438\u0439", None));
+        ___qtablewidgetitem.setText(QCoreApplication.translate("Dialog", u"Upper", None));
         ___qtablewidgetitem1 = self.tableWidget_2.horizontalHeaderItem(1)
-        ___qtablewidgetitem1.setText(QCoreApplication.translate("Dialog", u"\u041d\u0438\u0436\u043d\u0438\u0439", None));
+        ___qtablewidgetitem1.setText(QCoreApplication.translate("Dialog", u"Lower", None));
         ___qtablewidgetitem2 = self.tableWidget_2.verticalHeaderItem(0)
-        ___qtablewidgetitem2.setText(QCoreApplication.translate("Dialog", u"Vz, \u043c/\u0441", None));
+        ___qtablewidgetitem2.setText(QCoreApplication.translate("Dialog", u"Vz, m/s", None));
         ___qtablewidgetitem3 = self.tableWidget_2.verticalHeaderItem(1)
-        ___qtablewidgetitem3.setText(QCoreApplication.translate("Dialog", u"Vy, \u043c/\u0441", None));
+        ___qtablewidgetitem3.setText(QCoreApplication.translate("Dialog", u"Vy, m/s", None));
         ___qtablewidgetitem4 = self.tableWidget_2.verticalHeaderItem(2)
-        ___qtablewidgetitem4.setText(QCoreApplication.translate("Dialog", u"Rx, \u0433\u0440", None));
-        self.btn_in_1.setText(QCoreApplication.translate("Dialog", u"\u041e\u041a", None))
-        self.btn_in_2.setText(QCoreApplication.translate("Dialog", u"\u041e\u0442\u043c\u0435\u043d\u0430", None))
+        ___qtablewidgetitem4.setText(QCoreApplication.translate("Dialog", u"Rx, deg", None));
+        self.btn_in_1.setText(QCoreApplication.translate("Dialog", u"OK", None))
+        self.btn_in_2.setText(QCoreApplication.translate("Dialog", u"Cancel", None))
     # retranslateUi
 

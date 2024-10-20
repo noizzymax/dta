@@ -31,6 +31,8 @@ class MainWindow(QMainWindow):
 
         self.ui.btn_load6.clicked.connect(self.btn_load6_pressed)
         self.ui.btn_set_time.clicked.connect(self.btn_set_time_pressed)
+        self.ui.btn_settings.setDisabled(True)
+
 
         self.ui.btn_in_1.setDisabled(True)
         self.ui.btn_in_2.setDisabled(True)

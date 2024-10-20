@@ -6,6 +6,132 @@
 from PySide6 import QtCore
 
 qt_resource_data = b"\
+\x00\x00\x07\xb6\
+<\
+?xml version=\x221.\
+0\x22 encoding=\x22UTF\
+-8\x22 standalone=\x22\
+no\x22?>\x0d\x0a<svg\x0d\x0a   \
+height=\x2248\x22\x0d\x0a   \
+viewBox=\x220 96 96\
+0 960\x22\x0d\x0a   width\
+=\x2248\x22\x0d\x0a   versio\
+n=\x221.1\x22\x0d\x0a   id=\x22\
+svg2917\x22\x0d\x0a   sod\
+ipodi:docname=\x22s\
+ettings_FILL0_wg\
+ht400_GRAD0_opsz\
+48.svg\x22\x0d\x0a   inks\
+cape:version=\x221.\
+2.2 (732a01da63,\
+ 2022-12-09)\x22\x0d\x0a \
+  xmlns:inkscape\
+=\x22http://www.ink\
+scape.org/namesp\
+aces/inkscape\x22\x0d\x0a\
+   xmlns:sodipod\
+i=\x22http://sodipo\
+di.sourceforge.n\
+et/DTD/sodipodi-\
+0.dtd\x22\x0d\x0a   xmlns\
+=\x22http://www.w3.\
+org/2000/svg\x22\x0d\x0a \
+  xmlns:svg=\x22htt\
+p://www.w3.org/2\
+000/svg\x22>\x0d\x0a  <de\
+fs\x0d\x0a     id=\x22def\
+s2921\x22 />\x0d\x0a  <so\
+dipodi:namedview\
+\x0d\x0a     id=\x22named\
+view2919\x22\x0d\x0a     \
+pagecolor=\x22#ffff\
+ff\x22\x0d\x0a     border\
+color=\x22#666666\x22\x0d\
+\x0a     borderopac\
+ity=\x221.0\x22\x0d\x0a     \
+inkscape:showpag\
+eshadow=\x222\x22\x0d\x0a   \
+  inkscape:pageo\
+pacity=\x220.0\x22\x0d\x0a  \
+   inkscape:page\
+checkerboard=\x220\x22\
+\x0d\x0a     inkscape:\
+deskcolor=\x22#d1d1\
+d1\x22\x0d\x0a     showgr\
+id=\x22false\x22\x0d\x0a    \
+ inkscape:zoom=\x22\
+17.270833\x22\x0d\x0a    \
+ inkscape:cx=\x2220\
+.381182\x22\x0d\x0a     i\
+nkscape:cy=\x2224.0\
+28951\x22\x0d\x0a     ink\
+scape:window-wid\
+th=\x221920\x22\x0d\x0a     \
+inkscape:window-\
+height=\x221009\x22\x0d\x0a \
+    inkscape:win\
+dow-x=\x221912\x22\x0d\x0a  \
+   inkscape:wind\
+ow-y=\x22-8\x22\x0d\x0a     \
+inkscape:window-\
+maximized=\x221\x22\x0d\x0a \
+    inkscape:cur\
+rent-layer=\x22svg2\
+917\x22 />\x0d\x0a  <path\
+\x0d\x0a     d=\x22m388 9\
+76-20-126q-19-7-\
+40-19t-37-25l-11\
+8 54-93-164 108-\
+79q-2-9-2.5-20.5\
+T185 576q0-9 .5-\
+20.5T188 535L80 \
+456l93-164 118 5\
+4q16-13 37-25t40\
+-18l20-127h184l2\
+0 126q19 7 40.5 \
+18.5T669 346l118\
+-54 93 164-108 7\
+7q2 10 2.5 21.5t\
+.5 21.5q0 10-.5 \
+21t-2.5 21l108 7\
+8-93 164-118-54q\
+-16 13-36.5 25.5\
+T592 850l-20 126\
+H388Zm92-270q54 \
+0 92-38t38-92q0-\
+54-38-92t-92-38q\
+-54 0-92 38t-38 \
+92q0 54 38 92t92\
+ 38Zm0-60q-29 0-\
+49.5-20.5T410 57\
+6q0-29 20.5-49.5\
+T480 506q29 0 49\
+.5 20.5T550 576q\
+0 29-20.5 49.5T4\
+80 646Zm0-70Zm-4\
+4 340h88l14-112q\
+33-8 62.5-25t53.\
+5-41l106 46 40-7\
+2-94-69q4-17 6.5\
+-33.5T715 576q0-\
+17-2-33.5t-7-33.\
+5l94-69-40-72-10\
+6 46q-23-26-52-4\
+3.5T538 348l-14-\
+112h-88l-14 112q\
+-34 7-63.5 24T30\
+6 414l-106-46-40\
+ 72 94 69q-4 17-\
+6.5 33.5T245 576\
+q0 17 2.5 33.5T2\
+54 643l-94 69 40\
+ 72 106-46q24 24\
+ 53.5 41t62.5 25\
+l14 112Z\x22\x0d\x0a     \
+id=\x22path2915\x22\x0d\x0a \
+    style=\x22fill:\
+#d7d7d7\x22 />\x0d\x0a</s\
+vg>\x0d\x0a\
 \x00\x008i\
 \xff\
 \xd8\xff\xe0\x00\x10JFIF\x00\x01\x01\x01\x00H\x00\
@@ -2115,6 +2241,10 @@ qt_resource_name = b"\
 \x07\x03}\xc3\
 \x00i\
 \x00m\x00a\x00g\x00e\x00s\
+\x00\x0c\
+\x0b\xdf,\xc7\
+\x00s\
+\x00e\x00t\x00t\x00i\x00n\x00g\x00s\x00.\x00s\x00v\x00g\
 \x00\x08\
 \x0d$\x5cg\
 \x00b\
@@ -2130,11 +2260,13 @@ qt_resource_struct = b"\
 \x00\x00\x00\x00\x00\x00\x00\x00\
 \x00\x00\x00\x00\x00\x02\x00\x00\x00\x01\x00\x00\x00\x02\
 \x00\x00\x00\x00\x00\x00\x00\x00\
-\x00\x00\x00\x00\x00\x02\x00\x00\x00\x02\x00\x00\x00\x03\
+\x00\x00\x00\x00\x00\x02\x00\x00\x00\x03\x00\x00\x00\x03\
 \x00\x00\x00\x00\x00\x00\x00\x00\
 \x00\x00\x00\x12\x00\x00\x00\x00\x00\x01\x00\x00\x00\x00\
+\x00\x00\x01\x8a=K\x95w\
+\x00\x00\x000\x00\x00\x00\x00\x00\x01\x00\x00\x07\xba\
 \x00\x00\x01\x91\xc6j\x1e\xd6\
-\x00\x00\x00(\x00\x00\x00\x00\x00\x01\x00\x008m\
+\x00\x00\x00F\x00\x00\x00\x00\x00\x01\x00\x00@'\
 \x00\x00\x01\x91\xc6oP\x5c\
 "
 

@@ -18,6 +18,7 @@ from PySide6.QtWidgets import (QApplication, QFrame, QGridLayout, QHBoxLayout,
 import velocity as vel
 
 from src.ui_main_window import Ui_MainWindow
+from src.tol_dialog import Ui_Dialog
 
 
 class MainWindow(QMainWindow):
@@ -32,7 +33,7 @@ class MainWindow(QMainWindow):
         self.ui.btn_load6.clicked.connect(self.btn_load6_pressed)
         self.ui.btn_set_time.clicked.connect(self.btn_set_time_pressed)
         self.ui.btn_settings.clicked.connect(self.btn_settings_pressed)
-        self.ui.btn_settings.setDisabled(True)
+        self.ui.btn_settings.setDisabled(False)
 
         self.ui.btn_in_1.setDisabled(True)
         self.ui.btn_in_2.setDisabled(True)
@@ -40,7 +41,7 @@ class MainWindow(QMainWindow):
         self.ui.btn_in_4.setDisabled(True)
         self.ui.btn_spring_prc.setDisabled(True)
 
-        self.setWindowFlags(Qt.WindowStaysOnTopHint)
+        # self.setWindowFlags(Qt.WindowStaysOnTopHint)
 
     def btn_set_time_pressed(self):
         print('mpl_connecting callback')
@@ -75,7 +76,12 @@ class MainWindow(QMainWindow):
         self.ui.tableWidget.setItem(1, 2, QTableWidgetItem(rx))
 
     def btn_settings_pressed(self):
-        pass
+        self.dlg = QDialog()
+        self.dlg_ui = Ui_Dialog()
+        self.dlg_ui.setupUi(self.dlg)
+
+        self.dlg.exec()
+
 
     def closeEvent(self, event):
         for i in plt.get_fignums():

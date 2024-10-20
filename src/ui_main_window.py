@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'main_windowKIecrG.ui'
+## Form generated from reading UI file 'main_windowAFfvUt.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.7.2
 ##
@@ -207,12 +207,12 @@ class Ui_MainWindow(object):
 
         self.horizontalLayout_5.addItem(self.horizontalSpacer)
 
-        self.toolButton = QToolButton(self.frame_4)
-        self.toolButton.setObjectName(u"toolButton")
-        self.toolButton.setMinimumSize(QSize(30, 30))
-        self.toolButton.setMaximumSize(QSize(30, 30))
-        self.toolButton.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
-        self.toolButton.setStyleSheet(u"QToolButton {\n"
+        self.btn_settings = QToolButton(self.frame_4)
+        self.btn_settings.setObjectName(u"btn_settings")
+        self.btn_settings.setMinimumSize(QSize(30, 30))
+        self.btn_settings.setMaximumSize(QSize(30, 30))
+        self.btn_settings.setLayoutDirection(Qt.LayoutDirection.LeftToRight)
+        self.btn_settings.setStyleSheet(u"QToolButton {\n"
 "	text-align: center;\n"
 "    border-radius: 5px;\n"
 "	background-color: rgba(0, 0, 0, 50);\n"
@@ -227,10 +227,10 @@ class Ui_MainWindow(object):
 "}")
         icon = QIcon()
         icon.addFile(u":/images/images/settings.svg", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.toolButton.setIcon(icon)
-        self.toolButton.setIconSize(QSize(20, 20))
+        self.btn_settings.setIcon(icon)
+        self.btn_settings.setIconSize(QSize(20, 20))
 
-        self.horizontalLayout_5.addWidget(self.toolButton)
+        self.horizontalLayout_5.addWidget(self.btn_settings)
 
 
         self.verticalLayout.addWidget(self.frame_4)
@@ -480,7 +480,7 @@ class Ui_MainWindow(object):
         self.btn_set_time.setText(QCoreApplication.translate("MainWindow", u"Time click", None))
         self.btn_load6.setText(QCoreApplication.translate("MainWindow", u"Load 6DOF XOB", None))
         self.label_3.setText(QCoreApplication.translate("MainWindow", u"Statistics", None))
-        self.toolButton.setText("")
+        self.btn_settings.setText("")
         ___qtablewidgetitem = self.tableWidget.horizontalHeaderItem(0)
         ___qtablewidgetitem.setText(QCoreApplication.translate("MainWindow", u"Actual", None));
         ___qtablewidgetitem1 = self.tableWidget.horizontalHeaderItem(1)
